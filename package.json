@@ -1,0 +1,46 @@
+{
+  "name": "npm-starter-pluto-css",
+  "version": "1.0.0",
+  "description": "A minimal starter template for npm projects powered by Pluto CSS",
+  "author": "The Pluto Authors",
+  "license": "MIT",
+  "homepage": "https://pluto.land",
+  "repository": "https://github.com/plutoland/npm-starter-pluto-css",
+  "bugs": "https://github.com/plutoland/npm-starter-pluto-css/issues",
+  "keywords": [
+    "pluto",
+    "plutoland",
+    "design-system",
+    "web",
+    "ui",
+    "frontend",
+    "framework",
+    "functional-css",
+    "utility-classes",
+    "css",
+    "sass",
+    "starter",
+    "template"
+  ],
+  "scripts": {
+    "clean": "rimraf public/build",
+    "build": "cross-env NODE_ENV=production postcss src/styles.scss -o public/build/styles.css --verbose",
+    "develop": "cross-env NODE_ENV=development concurrently \"postcss src/styles.scss -o public/build/styles.css --verbose --watch\" \"live-server ./public --no-browser --port=3000\"",
+    "start": "npm run develop"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.5",
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^7.1.1",
+    "postcss-node-sass": "^2.1.8",
+    "postcss-scss": "^2.1.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@plutoland/css": "^1.0.0-canary.1"
+  }
+}

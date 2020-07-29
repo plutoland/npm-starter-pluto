@@ -1,0 +1,75 @@
+//
+// Styles
+//
+
+//
+// Override Pluto's default variables
+//
+
+// $colors: (
+//   transparent: transparent,
+//   current: currentColor,
+//   white: #fff,
+//   black: #000,
+//   brand-blue: #0055ff,
+// );
+
+// $utilities: (
+//   'background-clip': null,
+// );
+
+//
+// Import Pluto
+//
+
+// Option 1: Import all Pluto styles in one go
+
+// @import '@plutoland/css/src/pluto';
+
+// Option 2: Import only the styles you need
+
+@import '@plutoland/css/src/functions';
+@import '@plutoland/css/src/mixins';
+@import '@plutoland/css/src/theme';
+
+// Add/replace/remove individual theme values
+
+// $colors: map-merge(
+//   $colors,
+//   (
+//     brand-blue: #0055ff,
+//   )
+// );
+
+// $colors: map-merge(
+//   $colors,
+//   (
+//     white: #eee,
+//     black: #111,
+//   )
+// );
+
+// $colors: map-remove($colors, white, black);
+
+@import '@plutoland/css/src/normalize';
+@import '@plutoland/css/src/base';
+@import '@plutoland/css/src/container';
+
+//
+// Write/import your own custom styles
+//
+
+// body {
+//   margin: 0;
+// }
+
+// @import './custom-1.scss';
+// @import './custom-2.scss';
+
+//
+// Pluto's utilities should always go last so that they can override components
+//
+
+@import '@plutoland/css/src/helpers';
+@import '@plutoland/css/src/utilities';
+@import '@plutoland/css/src/utilities-api';
