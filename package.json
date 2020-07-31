@@ -5,8 +5,8 @@
   "author": "The Pluto Authors",
   "license": "MIT",
   "homepage": "https://pluto.land",
-  "repository": "https://github.com/plutoland/npm-starter-pluto-css",
-  "bugs": "https://github.com/plutoland/npm-starter-pluto-css/issues",
+  "repository": "https://github.com/plutoland/npm-starter-pluto",
+  "bugs": "https://github.com/plutoland/npm-starter-pluto/issues",
   "keywords": [
     "pluto",
     "plutoland",
