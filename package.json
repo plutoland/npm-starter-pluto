@@ -1,7 +1,7 @@
 {
-  "name": "npm-starter-pluto-css",
-  "version": "1.0.0",
-  "description": "A minimal starter template for npm projects powered by Pluto CSS",
+  "name": "npm-starter-pluto",
+  "version": "1.0.1",
+  "description": "A minimal starter template for npm projects powered by Pluto",
   "author": "The Pluto Authors",
   "license": "MIT",
   "homepage": "https://pluto.land",
@@ -20,6 +20,9 @@
     "develop": "cross-env NODE_ENV=development concurrently \"postcss src/styles.scss -o public/build/styles.css --verbose --watch\" \"live-server ./public --no-browser --port=3000\"",
     "start": "npm run develop"
   },
+  "dependencies": {
+    "@plutoland/css": "^1.0.0-canary.1"
+  },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.5",
@@ -31,8 +34,5 @@
     "postcss-node-sass": "^2.1.8",
     "postcss-scss": "^2.1.1",
     "rimraf": "^3.0.2"
-  },
-  "dependencies": {
-    "@plutoland/css": "^1.0.0-canary.1"
   }
 }
